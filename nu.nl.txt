@@ -1,22 +1,30 @@
 
-; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> www.nu.nl nu.nl +noall +answer -t ANY +additional
+; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> www.nu.nl nu.nl +noall +answer -t ANY +additional @ns01.sanomaservices.nl
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28897
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 19873
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
 
 ;; QUESTION SECTION:
 ;www.nu.nl.			IN	A
 
 ;; ANSWER SECTION:
-www.nu.nl.		60	IN	CNAME	nunl.aws.sanomaservices.nl.
-nunl.aws.sanomaservices.nl. 60	IN	A	107.178.244.221
+www.nu.nl.		34	IN	CNAME	nunl.aws.sanomaservices.nl.
+nunl.aws.sanomaservices.nl. 34	IN	A	107.178.244.221
 
-;; Query time: 44 msec
+;; Query time: 0 msec
 ;; SERVER: 80.83.127.40#53(80.83.127.40)
-;; WHEN: Thu Sep 29 22:52:09 2016
+;; WHEN: Thu Sep 29 22:52:35 2016
 ;; MSG SIZE  rcvd: 81
 
-nu.nl.			3469	IN	NS	ns03.sanomaservices.net.
-nu.nl.			3469	IN	NS	ns02.sanomaservices.com.
-nu.nl.			3469	IN	NS	ns01.sanomaservices.nl.
+nu.nl.			86400	IN	TXT	"MS=ms73419602"
+nu.nl.			86400	IN	MX	0 nu-nl.mail.protection.outlook.com.
+nu.nl.			86400	IN	NS	ns03.sanomaservices.net.
+nu.nl.			150	IN	A	174.129.25.170
+nu.nl.			86400	IN	NS	ns01.sanomaservices.nl.
+nu.nl.			86400	IN	NS	ns02.sanomaservices.com.
+nu.nl.			3600	IN	SOA	ns01.sanomaservices.nl. hostmaster.nu.nl. 2016090702 14400 1800 604800 86400
+nu.nl.			86400	IN	TXT	"v=spf1 include:_spf.sanomaservices.nl  include:spf.protection.outlook.com -all"
+nu.nl.			86400	IN	TXT	"44H7wFK0U1bPombNvcSDEEeuh4tt0XfAGrMWp9Rud0zNncmKY4X9Xy6/ZIdK76RU8kFePsDZNiazxafW6c2Kfg=="
+ns03.sanomaservices.net. 3600	IN	A	52.209.35.50
+ns01.sanomaservices.nl.	3600	IN	A	52.209.32.138
