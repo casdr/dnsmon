@@ -1,0 +1,22 @@
+
+; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> www.nu.nl nu.nl +noall +answer -t ANY +additional
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21240
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.nu.nl.			IN	A
+
+;; ANSWER SECTION:
+www.nu.nl.		6	IN	CNAME	nunl.aws.sanomaservices.nl.
+nunl.aws.sanomaservices.nl. 6	IN	A	107.178.244.221
+
+;; Query time: 0 msec
+;; SERVER: 80.83.127.40#53(80.83.127.40)
+;; WHEN: Thu Sep 29 22:51:59 2016
+;; MSG SIZE  rcvd: 81
+
+nu.nl.			3479	IN	NS	ns03.sanomaservices.net.
+nu.nl.			3479	IN	NS	ns02.sanomaservices.com.
+nu.nl.			3479	IN	NS	ns01.sanomaservices.nl.
